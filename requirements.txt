@@ -1,0 +1,9 @@
+streamlit
+llama-index
+chromadb
+langchain_google_genai
+langchain
+langchain_chroma
+langchain_community
+langchain_huggingface
+sentence-transformers
