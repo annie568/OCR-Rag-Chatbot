@@ -10,26 +10,26 @@ pip install langchain-core langchain-google-genai langchain-huggingface langchai
 import os
 from pathlib import Path
 import shutil
-import streamlit as st # type: ignore
-from pypdf import PdfReader # type: ignore
+import streamlit as st  
+from pypdf import PdfReader  
 
 # LangChain - Core imports
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage # type: ignore
-from langchain_core.prompts import ChatPromptTemplate # type: ignore
-from langchain_core.runnables import RunnablePassthrough # pyright: ignore[reportMissingImports]
-from langchain_core.output_parsers import StrOutputParser # type: ignore
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage 
+from langchain_core.prompts import ChatPromptTemplate 
+from langchain_core.runnables import RunnablePassthrough  
+from langchain_core.output_parsers import StrOutputParser 
 
 # Google Generative AI (for LLM only)
-from langchain_google_genai import ChatGoogleGenerativeAI # type: ignore
+from langchain_google_genai import ChatGoogleGenerativeAI 
 
 # HuggingFace Embeddings
-from langchain_huggingface import HuggingFaceEmbeddings # type: ignore
+from langchain_huggingface import HuggingFaceEmbeddings 
 
 # Text splitters
-from langchain_text_splitters import RecursiveCharacterTextSplitter # type: ignore
+from langchain_text_splitters import RecursiveCharacterTextSplitter  
 
 # Vector store
-from langchain_chroma import Chroma # type: ignore
+from langchain_chroma import Chroma  
 
 
 
